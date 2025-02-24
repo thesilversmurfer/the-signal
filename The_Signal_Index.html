@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Signal</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ffcc;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        .glitch {
+            font-size: 24px;
+            text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #0000ff;
+            animation: glitch 1s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #0000ff; }
+            100% { text-shadow: -2px -2px 0px #ff0000, 2px 2px 0px #0000ff; }
+        }
+        .container {
+            margin-top: 20vh;
+        }
+        .transmission {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .enter-button {
+            background: none;
+            border: 1px solid #00ffcc;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #00ffcc;
+            cursor: pointer;
+        }
+        .enter-button:hover {
+            background: #00ffcc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="glitch">//:ERROR—DATA COMPROMISED</p>
+        <p class="transmission">//:RECOVER TRANSMISSION [Y/N]?</p>
+        <a href="The_Signal_Zine.pdf" download>
+            <button class="enter-button">ENTER</button>
+        </a>
+    </div>
+</body>
+</html>
